@@ -1,0 +1,1 @@
+{"1.0":{"Hello":{"controller":"V1::Hello","media_type":"V1::MediaTypes::Hello"},"Posts":{"controller":"V1::ApiResources::Posts","media_type":"V1::MediaTypes::Post"},"Tasks":{"controller":"V1::ApiResources::Tasks","media_type":"V1::MediaTypes::Task"}}}
