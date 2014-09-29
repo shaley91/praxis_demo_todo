@@ -1,7 +1,10 @@
+require 'active_record'
+
 # Main entry point - DO NOT MODIFY THIS FILE
 ENV['RACK_ENV'] ||= 'development'
 
 Bundler.require(:default, ENV['RACK_ENV'])
+
 
 # Default application layout.
 # NOTE: This layout need NOT be specified explicitly.

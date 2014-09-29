@@ -1,0 +1,24 @@
+development:
+  database:
+    adapter: mysql2
+    database: praxis_demo_todo_development
+    username: root
+    password:
+    min_messages: WARNING
+    host: localhost
+    reconnect: true
+    charset: utf8
+    encoding: utf8
+    collation: utf8_unicode_ci
+test:
+  database:
+    adapter: mysql2
+    database: praxis_demo_todo_test
+    username: root
+    password:
+    min_messages: WARNING
+    host: localhost
+    reconnect: true
+    charset: utf8
+    encoding: utf8
+    collation: utf8_unicode_ci

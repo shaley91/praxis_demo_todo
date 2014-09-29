@@ -1,12 +1,10 @@
 module V1
   module MediaTypes
     class Task < Praxis::MediaType
-      identifier 'application/vnd.acme.post'
-
       attributes do
-        attribute :id, Integer, description: "Post identifier"
-        attribute :name, String, description: "Unique Href for this Post"
-        attribute :notes, String, description: "Title for the Post"
+        attribute :id, Integer, description: "Task identifier"
+        attribute :name, String, description: "Name of the task"
+        attribute :notes, String, description: "Extra notes for the task"
       end
 
       view :extended do
@@ -18,6 +16,12 @@ module V1
       view :link do
         attribute :id
         attribute :name
+      end
+
+      class Collection < Praxis::MediaTypeCollection
+        member_type Task
+
+        member_view :default, using: :link
       end
     end
   end
